@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Form Local Storage</title>
+
+    <style>
+        body {
+            background-image: url("https://images.saymedia-content.com/.image/t_share/MTc4NzM1OTc4MzE0MzQzOTM1/how-to-create-cool-website-backgrounds-the-ultimate-guide.png");
+            background-size: cover;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</head>
+<body onload="load_prev_msg()">
+    <center>
+        <div class="col-lg-4 m-5" style="float:left;">
+            <h1>New Message</h1>
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text " style="color:rgb(217, 238, 238) ">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="textinput">Message</label>
+                <textarea id="Message" name="Message" rows="4" cols="50" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="SaveForm()" >Submit</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+        </div>
+        <div class="col-lg-4 m-5" style="float:right;" >
+            <h1 id="prev_msg">Previous Messages</h1>
+            
+        </div>
+    </center>
+</body>
+</html>
